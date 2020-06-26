@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-      
-  <meta charset="UTF-8">
-      
+<head> 
+  <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+  <title>Where should I go?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div>
-    <div class="form">
-      <form>
-        <input type="text" name="postalCode" id="postalCode">
-        <input type="submit" name="submit">
-      </form>
-    </div>
-    <div class="events">
-                  
+  <div class="container">
+    <h1 class="flexA">
+      Where should I go?
+    </h1>
+    <form class="flexA">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="postalCode" id="postalCode" placeholder=""
+          aria-label="Username" aria-describedby="basic-addon1">
+        <input type="submit" name="submit" class="btn btn-light">
+      </div>
+    </form>
+    <p class="none" id="noevent">There is no event here.</p>
+    <div class="flexB">
+        <div class="events flexB-1">
+
+        </div>
+        <div class="flexB-2">
+          <div id="map" class="none"></div>
+        </div>
     </div>
   </div>
       
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg39pTsOUL6B2yVxnF1U2K7Mb8ttZ2xM4&callback=initMap">
+    </script>
   <script src="main.js"></script>
 </body>
 

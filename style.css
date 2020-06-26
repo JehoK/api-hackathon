@@ -1,0 +1,60 @@
+body {
+  background-image: url("concert.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  min-width: 70vw;
+  height: 90vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form {
+  width: 70%;
+}
+.flexA {
+  flex-basis: 10%;
+}
+.flexB {
+  flex-basis: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexB-2 {
+  flex-basis: 45%;
+  height: 100%;
+}
+.flexB-1 {
+  flex-basis: 45%;
+  height: 100%;
+}
+.b-color {
+  background-color: rgba(70, 70, 70, 0.3);
+}
+h1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+  width: 100%;
+}
+.none {
+  display: none;
+}
+#noevent {
+  flex-basis: 10%;
+  font-size: 2rem;
+  color: white;
+}
+p {
+  line-height: 1rem;
+}
